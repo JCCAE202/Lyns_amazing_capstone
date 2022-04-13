@@ -5,3 +5,114 @@
     background-position: center center;
     background-repeat: no-repeat;
     }
+
+    .navbar {
+        background-color: chartreuse;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #fd0d0d;
+        border-color: #0d6efd;
+
+    .login-form .blue-btn {
+            border: 0;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 50px;
+            letter-spacing: 1px;
+        }
+        .blue-btn:hover {
+            text-decoration: none;
+            background: #000;
+            color: #fff;
+        }
+        .blue-btn {
+            display: inline-block;
+            text-transform: uppercase;
+            color: #fff;
+            background: #0d91c2;
+            min-width: 160px;
+            text-align: center;
+            padding: 10px 0;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    body {
+        font-family: 'Heebo', sans-serif;
+      }
+      
+      .hero {
+        /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+        background-image: url(../images/hero.jpeg);
+          height: 400px;
+      
+          background-position: center;
+          background-attachment: fixed; 
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+      }
+      .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: aliceblue;
+      }
+      
+        footer {
+        /* position: fixed; */
+        padding:1.5rem;
+        bottom: 0;
+        width: 100%;
+        height: 75px;
+      }
+      .mb-80 {
+        margin-bottom: 80px !important;
+      }
+      .mt-10{
+        margin-top: 10em;
+      }
+      
+      
+      .i-large{
+        font-size: 5em;
+      }
+      
+      .bg-mg{
+        background-color: #e5ffe5;
+      }
+      
+      .card-text{
+        font-family: 'lato', sans-serif;
+      }
+      
+      .card-footer {
+        font-family: 'Bangers', cursive;
+        font-size: 1.5em;
+      }
+      
+      .buy-btn {
+        font-family: 'lato', sans-serif;
+      }
