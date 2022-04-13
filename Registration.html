@@ -148,7 +148,212 @@
 
   This is some content to save space.
 
-
+  <section class="register-now individual-reg">
+    <div class="container">
+        <div class="main-heading">
+            <h2>Individual / Student Registration Form</h2>
+          <div id="custom-message"></div>
+        </div>
+   <form autocomplete="off" action="/ce-files/enroll-processor.php?reg=s" METHOD="POST" name="register_student"  onSubmit="return validateStudentReg(this)">
+   <input autocomplete="off" name="hidden" type="text" style="display:none;">
+            <div class="form-group">
+            <label>Email Address<sup>*</sup></label>
+            <input type="hidden" name="prev_url" value="" class="cell2">
+            <input type="email" name="email" class="form-control" value="">
+            <small class="form-text text-muted">Your Username is Your Email Address</small>
+        </div>
+        <div class="form-group">
+            <label>Name<sup>*</sup></label><div class="row">
+                <div class="col-md-6">
+                <input type="hidden" name="iacfp_keycode" value="" class="cell2" size="50"><input type="text" class="form-control" name="first_name" value=""><small class="form-text text-muted">First Name</small></div>
+                <div class="col-md-6"><input type="text" name="last_name" value="" class="form-control"> <small class="form-text text-muted">Last Name</small> </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Address<sup>*</sup></label>
+            <input type="text" name="address" value="" class="form-control">
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-7">
+                    <input type="text" class="form-control" name="address_city" value="">
+                    <small class="form-text text-muted">City</small>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-control" name="address_state">
+                      <option value="">-SELECT-</option>
+                          <option value="AL">Alabama</option>
+                          <option value="AK">Alaska</option>
+                          <option value="AZ">Arizona</option>
+                          <option value="AR">Arkansas</option>
+                          <option value="BC">British Columbia</option>
+                          <option value="CA">California</option>
+                          <option value="CO">Colorado</option>
+                          <option value="CT">Connecticut</option>
+                          <option value="DE">Delaware</option>
+                          <option value="DC">District of Columbia</option>
+                          <option value="FL">Florida</option>
+                          <option value="GA">Georgia</option>
+                          <option value="HI">Hawaii</option>
+                          <option value="ID">Idaho</option>
+                          <option value="IL">Illinois</option>
+                          <option value="IN">Indiana</option>
+                          <option value="IA">Iowa</option>
+                          <option value="KS">Kansas</option>
+                          <option value="KY">Kentucky</option>
+                          <option value="LA">Louisiana</option>
+                          <option value="ME">Maine</option>
+                          <option value="MD">Maryland</option>
+                          <option value="MA">Massachusetts</option>
+                          <option value="MI">Michigan</option>
+                          <option value="MN">Minnesota</option>
+                          <option value="MS">Mississippi</option>
+                          <option value="MO">Missouri</option>
+                          <option value="MT">Montana</option>
+                          <option value="NE">Nebraska</option>
+                          <option value="NV">Nevada</option>
+                          <option value="NH">New Hampshire</option>
+                          <option value="NJ">New Jersey</option>
+                          <option value="NM">New Mexico</option>
+                          <option value="NY">New York</option>
+                          <option value="NC">North Carolina</option>
+                          <option value="ND">North Dakota</option>
+                          <option value="OH">Ohio</option>
+                          <option value="OK">Oklahoma</option>
+                          <option value="OR">Oregon</option>
+                          <option value="ON">Ontario</option>
+                          <option value="PA">Pennsylvania</option>
+                          <option value="PR">Puerto Rico</option>
+                          <option value="RI">Rhode Island</option>
+                          <option value="SC">South Carolina</option>
+                          <option value="SD">South Dakota</option>
+                          <option value="TN">Tennessee</option>
+                          <option value="TX">Texas</option>
+                          <option value="UT">Utah</option>
+                          <option value="VT">Vermont</option>
+                          <option value="VA">Virginia</option>
+                          <option value="WA">Washington</option>
+                          <option value="WV">West Virginia</option>
+                          <option value="WI">Wisconsin</option>
+                          <option value="WY">Wyoming</option>
+                          <option value="NU">Non &#8211; US</option>
+                  </select>
+                  <small class="form-text text-muted">State</small>
+                </div>
+                <div class="col-md-2">
+                  <input type="text" class="form-control" name="address_zip" value="" >
+                  <small class="form-text text-muted">Zipcode</small>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+             <label>Telephone Number<sup>*</sup></label>
+             <input type="tel" class="form-control" name="telephone_num" value="">
+        </div>
+        <div class="form-group">
+             <label>Profession<sup>*</sup></label>
+             <select class="form-control"  name="profession" >
+              <option value="">-SELECT-</option>
+               <option value='29'>Addiction Professional</option><option value='28'>Administrative</option><option value='27'>Behavioral Technician</option><option value='20'>CAP</option><option value='31'>Case Manager</option><option value='18'>Clinical Social Worker</option><option value='8'>Dietician/Nutritionist</option><option value='9'>Electrolysis Technician</option><option value='19'>Intern</option><option value='3'>Marriage/Fam Therapist</option><option value='4'>Mental Health Couns.</option><option value='7'>Mid Wife</option><option value='22'>None</option><option value='26'>Nurses</option><option value='32'>Other</option><option value='10'>Physical Therapist</option><option value='30'>Professional Counselor</option><option value='33'>Psychoanalyst</option><option value='5'>Psychologist</option><option value='24'>Rehabilitation counselors</option><option value='6'>School Psychologist</option>				</select>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="liscense" id="liscense" value="" />
+                    <small class="form-text text-muted">License Number</small>
+                </div>
+                <div class="col-md-6">
+                                    <div class="ui calendar" id="datePicker2">
+                                     <div class="ui input left icon">
+                                        <input type="text" placeholder="Date of License Renewal:" name="l_renew" class="form-control" style="background:url('/ce-files/images/cal-icon.png') no-repeat scroll right;cursor: pointer;background-position: 97% 10px;">
+                                           </div>
+                                      </div>
+                
+                    <small class="form-text text-muted">Date of License Renewal:</small>
+                </div>
+                
+            </div>
+        </div>
+        <div class="form-group">
+            <label>State of Licensure:</label>
+            <select class="form-control"  name="profession_state" id="student_profession_state"  onchange="showMessage(this.value)" >
+              <option>-SELECT-</option>
+              <option value="AL">Alabama</option>
+                          <option value="AK">Alaska</option>
+                          <option value="AZ">Arizona</option>
+                          <option value="AR">Arkansas</option>
+                          <option value="BC">British Columbia</option>
+                          <option value="CA">California</option>
+                          <option value="CO">Colorado</option>
+                          <option value="CT">Connecticut</option>
+                          <option value="DE">Delaware</option>
+                          <option value="DC">District of Columbia</option>
+                          <option value="FL">Florida</option>
+                          <option value="GA">Georgia</option>
+                          <option value="HI">Hawaii</option>
+                          <option value="ID">Idaho</option>
+                          <option value="IL">Illinois</option>
+                          <option value="IN">Indiana</option>
+                          <option value="IA">Iowa</option>
+                          <option value="KS">Kansas</option>
+                          <option value="KY">Kentucky</option>
+                          <option value="LA">Louisiana</option>
+                          <option value="ME">Maine</option>
+                          <option value="MD">Maryland</option>
+                          <option value="MA">Massachusetts</option>
+                          <option value="MI">Michigan</option>
+                          <option value="MN">Minnesota</option>
+                          <option value="MS">Mississippi</option>
+                          <option value="MO">Missouri</option>
+                          <option value="MT">Montana</option>
+                          <option value="NE">Nebraska</option>
+                          <option value="NV">Nevada</option>
+                          <option value="NH">New Hampshire</option>
+                          <option value="NJ">New Jersey</option>
+                          <option value="NM">New Mexico</option>
+                          <option value="NY">New York</option>
+                          <option value="NC">North Carolina</option>
+                          <option value="ND">North Dakota</option>
+                          <option value="OH">Ohio</option>
+                          <option value="OK">Oklahoma</option>
+                          <option value="OR">Oregon</option>
+                          <option value="ON">Ontario</option>
+                          <option value="PA">Pennsylvania</option>
+                          <option value="PR">Puerto Rico</option>
+                          <option value="RI">Rhode Island</option>
+                          <option value="SC">South Carolina</option>
+                          <option value="SD">South Dakota</option>
+                          <option value="TN">Tennessee</option>
+                          <option value="TX">Texas</option>
+                          <option value="UT">Utah</option>
+                          <option value="VT">Vermont</option>
+                          <option value="VA">Virginia</option>
+                          <option value="WA">Washington</option>
+                          <option value="WV">West Virginia</option>
+                          <option value="WI">Wisconsin</option>
+                          <option value="WY">Wyoming</option>
+                          <option value="NU">International</option>
+                          <option value="NA">Not Licensed</option>
+          </select>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="password" class="form-control"  name="password" />
+                    <small class="form-text text-muted">Enter a Password<sup>*</sup></small>
+                </div>
+                <div class="col-md-6">
+                    <input type="password" class="form-control"  name="password2"/>
+                    <small class="form-text text-muted">Verify Password<sup>*</sup></small>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="submit"  value="Submit" name="register_student"class="blue-btn">&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Clear" class="blue-btn" style="margin-left:10px;">
+        </div>
+        </form>
+        <p><sup>*</sup> <strong>Please remember that your Email Address will be your Username.</strong></p>
+    </div>
 
 
 

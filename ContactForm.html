@@ -16,7 +16,7 @@
 
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">JCCAE</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -57,7 +57,21 @@
             </div>
         </div>
     </nav>
-
+    
+    <section class="register-now individual-reg">
+        <div class="container">
+            <div class="main-heading">
+                <h2>Individual / Student Registration Form</h2>
+              <div id="custom-message"></div>
+            </div>
+       <form autocomplete="off" action="/ce-files/enroll-processor.php?reg=s" METHOD="POST" name="register_student"  onSubmit="return validateStudentReg(this)">
+       <input autocomplete="off" name="hidden" type="text" style="display:none;">
+                <div class="form-group">
+                <label>Email Address<sup>*</sup></label>
+                <input type="hidden" name="prev_url" value="" class="cell2">
+                <input type="email" name="email" class="form-control" value="">
+                <small class="form-text text-muted">Your Username is Your Email Address</small>
+            </div>
 
     <form>
         <div class="mb-3">
