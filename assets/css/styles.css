@@ -7,7 +7,7 @@
     }
 
     .navbar {
-        background-color: chartreuse;
+        background-color: purple;
     }
 
     .btn-primary {
@@ -40,6 +40,27 @@
             margin-bottom: 5px;
         }
 
+
+.card-footer {
+    background: #0d91c2;
+    min-width: 160px;
+    text-align: center;
+    padding: 10px 0;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+
+
+.card-text {
+
+}
+
+
+.card-header { 
+
+}
 
 
 
