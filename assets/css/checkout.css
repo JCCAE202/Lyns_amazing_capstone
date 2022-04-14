@@ -1,6 +1,5 @@
  
-<!-- element.style {
-}
+
 .g-5, .gy-5 {
     --bs-gutter-y: 3rem;
 }
@@ -90,7 +89,7 @@ body {
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
     --bs-body-color: #212529;
-Show All Properties (1 more)
+Show All: Properties (1 more)
 }
 *, ::after, ::before {
     box-sizing: border-box;
@@ -103,6 +102,4 @@ Show All Properties (1 more)
 
 .w3-btn, .w3-btn:link, .w3-btn:visited{
     color: #FFFFFF;
-    background color: #4CAF50
-    }
-    
+    background color: #4CAF50;}
